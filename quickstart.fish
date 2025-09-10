@@ -1,0 +1,77 @@
+#!/usr/bin/env fish
+
+# Growtopia Proxy Tester - Quick Start Guide
+echo "🎮 Growtopia Proxy Tester v3.0 - Quick Start"
+echo "═════════════════════════════════════════════"
+
+echo ""
+echo "📋 What's New in v3.0:"
+echo "• ✅ Complete rewrite from PowerShell to Python"
+echo "• ✅ Based on Mori Growtopia client analysis"  
+echo "• ✅ More accurate protocol testing"
+echo "• ✅ Comprehensive scoring system (0-100)"
+echo "• ✅ Better SOCKS5 implementation"
+echo "• ✅ Enhanced error handling"
+echo "• ✅ Cross-platform Linux support"
+
+echo ""
+echo "🔧 Setup (run once):"
+echo "  ./setup.fish"
+
+echo ""  
+echo "🚀 Basic Usage:"
+echo "  ./gt_proxy_tester.py                    # Find new working proxy"
+echo "  ./test_existing_proxy.py --test-latest # Test saved proxy"
+echo "  ./demo.py                              # Show all features"
+
+echo ""
+echo "⚙️ Advanced Usage:"
+echo "  ./gt_proxy_tester.py --app my-heroku-app --max-attempts 20"
+echo "  ./gt_proxy_tester.py --test-proxy 'socks5://user:pass@ip:port'"
+echo "  ./test_existing_proxy.py --from-file working_proxies.txt"
+
+echo ""
+echo "📊 Understanding Results:"
+echo "  Score 90-100: Excellent (all tests pass)"
+echo "  Score 70-89:  Good (minor issues)"  
+echo "  Score 50-69:  Fair (may have problems)"
+echo "  Score <50:    Poor (not recommended)"
+
+echo ""
+echo "🎯 Test Components:"
+echo "  • SOCKS5 Basic (20pts) - Proxy connectivity"
+echo "  • HTTP Website (25pts) - Access to growtopiagame.com"
+echo "  • Server Data (30pts) - Critical for game connection"  
+echo "  • TCP Game Server (20pts) - Direct server access"
+echo "  • ENet Compatible (5pts) - Protocol support"
+
+echo ""
+echo "📁 Output Files:"
+echo "  working_proxies.txt - Stores compatible proxies with scores"
+
+echo ""
+echo "🔍 Key Improvements Over v2.0:"
+echo "  • Real protocol analysis (based on Mori source)"
+echo "  • Better Growtopia server detection" 
+echo "  • Proper SOCKS5 UDP association testing"
+echo "  • Enhanced blocking detection (403 errors)"
+echo "  • Multi-server endpoint testing"
+echo "  • Scoring system for quality assessment"
+
+echo ""
+echo "🐛 Troubleshooting:"
+echo "  • Heroku not found: Install with 'pacman -S heroku-cli'"
+echo "  • Python errors: Run './setup.fish' to create venv"
+echo "  • 403 errors: Proxy blocked by Growtopia (expected)"
+echo "  • TCP timeouts: Normal, HTTP+ServerData tests are key"
+
+echo ""  
+echo "⚡ Pro Tips:"
+echo "  • Run during off-peak hours for better success"
+echo "  • Higher max-attempts = better chance of success"
+echo "  • Score 80+ is excellent for Growtopia"
+echo "  • Server Data test is most critical for gameplay"
+
+echo ""
+echo "🎮 Ready to find working Growtopia proxies!"
+echo "═════════════════════════════════════════════"
